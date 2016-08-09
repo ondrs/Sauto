@@ -1,7 +1,7 @@
 {
   "name": "ondrs/sauto",
   "type": "library",
-  "description": "Unofficial Sauto API PHP wrapper",
+  "description": "Sauto API PHP wrapper",
   "keywords": ["sauto", "php", "api", "wrapper"],
   "homepage": "http://ondraplsek.cz",
   "license": ["MIT"],

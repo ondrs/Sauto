@@ -1,7 +1,7 @@
 Sauto
 ==============
 
-Unofficial Sauto API PHP wrapper
+Sauto API PHP wrapper
 
 
 Instalation
@@ -9,14 +9,14 @@ Instalation
 
 composer.json
 
-    "ondrs/Sauto": "0.2.0"
+    "ondrs/sauto": "0.2.0"
 
 Usage
 -----
 
 Create a new Sauto instance and pass your software key as a parametr
 
-        $sauto = new ondrs\Sauto\SautoApi('sauto.swKey')
+    $sauto = new ondrs\Sauto\SautoApi('sauto.swKey')
 
 Login
 
@@ -35,6 +35,8 @@ Create/update vehicles
     ]);
     
     $carId = $sauto->addEditCar($car);  // returns int
+    
+    // etc... :)
     
     
 And logout after you are done
