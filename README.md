@@ -9,7 +9,7 @@ Instalation
 
 composer.json
 
-    "ondrs/Sauto": "0.1.0"
+    "ondrs/Sauto": "0.2.0"
 
 Usage
 -----
