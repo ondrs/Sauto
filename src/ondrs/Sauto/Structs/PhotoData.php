@@ -14,7 +14,7 @@ class PhotoData extends BaseStruct
     public $main;
     public $alt;
     public $client_photo_id;
-    public $b64;
+    // public $b64;
 
 
     /**
