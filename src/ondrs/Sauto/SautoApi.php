@@ -204,6 +204,12 @@ class SautoApi
      */
     public function addEditPhoto($carId, PhotoData $photoData)
     {
+        // API will thrown an error if b64 is sent as NULL
+        // the property has to be removed completely
+        if ($photoData->b64 === NULL) {
+            unset($photoData->b64);
+        }
+
         $output = $this->call('addEditPhoto', [
             'session_id' => $this->sessionId,
             'car_id' => $carId,
