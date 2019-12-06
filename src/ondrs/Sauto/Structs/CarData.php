@@ -66,4 +66,14 @@ class CarData extends BaseStruct
     public $iframe_url;
     public $iframe_height;
     public $district;
+    public $total_views;
+    public $certified_id;
+    public $video_filename;
+    public $custom_label;
+    public $custom_label2;
+    public $custom_label3;
+    public $custom_label4;
+    public $url;
+    public $client_url;
+    public $iframe_small_url;
 }

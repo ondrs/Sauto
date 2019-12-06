@@ -175,7 +175,7 @@ class SautoApi
     {
         return $this->call('delCar', [
             'session_id' => $this->sessionId,
-            'car_id' => $carId,
+            'car_id' => (int)$carId,
         ]);
     }
 
@@ -212,7 +212,7 @@ class SautoApi
 
         $output = $this->call('addEditPhoto', [
             'session_id' => $this->sessionId,
-            'car_id' => $carId,
+            'car_id' => (int)$carId,
             'photo_data' => $photoData,
         ]);
         
@@ -242,7 +242,7 @@ class SautoApi
     {
         $output = $this->call('getPhotoId', [
             'session_id' => $this->sessionId,
-            'car_id' => $carId,
+            'car_id' => (int)$carId,
             'client_photo_id' => $clientPhotoId,
         ]);
 
@@ -258,7 +258,7 @@ class SautoApi
     {
         $output = $this->call('listOfPhotos', [
             'session_id' => $this->sessionId,
-            'car_id' => $carId,
+            'car_id' => (int)$carId,
         ]);
 
         $photos = array_map(function ($i) {
@@ -285,7 +285,7 @@ class SautoApi
     {
         $this->call('addEquipment', [
             'session_id' => $this->sessionId,
-            'car_id' => $carId,
+            'car_id' => (int)$carId,
             'equipment' => $equipment,
         ]);
     }
@@ -299,7 +299,7 @@ class SautoApi
     {
         $output = $this->call('listOfEquipment', [
             'session_id' => $this->sessionId,
-            'car_id' => $carId,
+            'car_id' => (int)$carId,
         ]);
 
         return $output['equipment'];
